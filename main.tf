@@ -28,6 +28,9 @@ resource "aws_instance" "instance" {
   tags = {
     Name = var.instance_name
   }
+  root_block_device {
+    volume_size = 4
+  }
 }
 
 resource "aws_security_group" "instances" {
