@@ -29,7 +29,7 @@ resource "aws_instance" "instance" {
     Name = var.instance_name
   }
   root_block_device {
-    volume_size = 15
+    #volume_size = 15
   }
 }
 
